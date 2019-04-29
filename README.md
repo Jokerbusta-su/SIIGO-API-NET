@@ -183,8 +183,7 @@ Metodos globales necesarios para el procesamiento de los datos enviados y obteni
 - Clonar el proyecto
 - Configurar <a href="https://medium.freecodecamp.org/how-to-get-https-working-on-your-local-development-environment-in-5-minutes-7af615770eec">HTTPS en su computador</a> *Esto para evitar el error por <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Access_control_CORS">CORS</a>*
 - Debe tener .NET Framework 4.5 <a href="https://www.microsoft.com/es-co/download/details.aspx?id=30">Instalar .Net Framework</a>
-- Ejecute los siguientes pasos para ejecutar la aplicacion sin necesidad de Visual Studio 2017 <a href="https://dailydotnettips.com/run-asp-net-web-application-from-command-prompt/">Ejecutar aplicación web ASP.NET desde la linea de comandos.</a>
+- Ejecute los siguientes pasos para correr la aplicación sin necesidad de Visual Studio 2017 <a href="https://dailydotnettips.com/run-asp-net-web-application-from-command-prompt/">Ejecutar aplicación web ASP.NET desde la linea de comandos.</a>
 - Para ejecutar la aplicacion desde Visual Studio, abra el proyecto como una solucion desde el IDE.
 - Abra la consola de administracion de paquetes de Visual Studio y ejecute el siguiente comando: *Update-Package*
 - Pulse la tecla *F5* para ejeutar la aplicación.
-- Ingrese por un navegador ala siguiente URL: *http://localhost:8080* y comprueba el funcionamiento.
