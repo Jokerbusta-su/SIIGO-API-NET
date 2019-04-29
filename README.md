@@ -48,7 +48,7 @@ public static async Task<string> getToken()
         }
 ```
 #### Consultas
-Una vez se obtiene el token, se puede realizar consultas a los métodos definidos en el API <URL>, a continuación un ejemplo de la solicitud por ajax.
+Una vez se obtiene el token, se puede realizar consultas a los métodos definidos en el API <URL>, a continuación un ejemplo de la solicitud por C#.
 
 Ejemplo con C# (Obtener lista de desarrolladores)
 ```
