@@ -60,7 +60,6 @@ public static async Task<List<Developer>> GetDevelopers()
                 var client = new HttpClient();
                 client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", SUBSCRIPTION_KEY);
                 client.DefaultRequestHeaders.Add("Authorization", await getToken());
-                //var uri = "http://localhost:16391/api/v1/Developers/GetAll?namespace=v1";
                 var uri = "http://siigoapi.azure-api.net/siigo/api/v1/Developers/GetAll?namespace=v1";
                 HttpResponseMessage response = await client.GetAsync(uri);
                 result = Util.fromJson<List<Developer>>(response.Content.ReadAsStringAsync().Result);
@@ -83,7 +82,6 @@ public static async Task<List<Product>> GetProducts()
                 var client = new HttpClient();
                 client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", SUBSCRIPTION_KEY);
                 client.DefaultRequestHeaders.Add("Authorization", await getToken());
-                //var uri = "http://localhost:16391/api/v1/Products/GetAll?numberPage=0&namespace=v1";
                 var uri = "http://siigoapi.azure-api.net/siigo/api/v1/Products/GetAll?numberPage=0&namespace=v1";
                 HttpResponseMessage response = await client.GetAsync(uri);
                 result = Util.fromJson<List<Product>>(response.Content.ReadAsStringAsync().Result);
@@ -108,7 +106,6 @@ public static async void DeleteProduct(long id)
                 var client = new HttpClient();
                 client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", SUBSCRIPTION_KEY);
                 client.DefaultRequestHeaders.Add("Authorization", await getToken());
-                //var uri = "http://localhost:16391/api/v1/Products/Delete/" + id + "?namespace=v1";
                 var uri = "http://siigoapi.azure-api.net/siigo/api/v1/Products/Delete/" + id + "?namespace=v1";
                 var response = await client.DeleteAsync(uri);
             }
@@ -131,7 +128,6 @@ public static async Task<Product> CreateProduct(Product product)
                 var client = new HttpClient();
                 client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", SUBSCRIPTION_KEY);
                 client.DefaultRequestHeaders.Add("Authorization", await getToken());
-                //var uri = "http://localhost:16391/api/v1/Products/Create?namespace=v1";
                 var uri = "http://siigoapi.azure-api.net/siigo/api/v1/Products/Create?namespace=v1";
                 HttpResponseMessage response;
                 string productStr = Util.toJson(product);
@@ -152,7 +148,7 @@ public static async Task<Product> CreateProduct(Product product)
         }
 ```
 ### 3. Estructura del Proyecto
-En el proyecto se encuentra desarrollado con el  frmaework Entity Framework 4.5 utilizando el lenguaje c#.
+En el proyecto se encuentra desarrollado con el  framework Entity Framework 4.5 utilizando el lenguaje c#.
 
 Se encuentran las siguientes carpetas y archivos
           <p>Controller</p>
