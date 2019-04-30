@@ -182,4 +182,4 @@ Metodos globales necesarios para el procesamiento de los datos enviados y obteni
 - Ejecute los siguientes pasos para correr la aplicación sin necesidad de Visual Studio 2017 <a href="https://dailydotnettips.com/run-asp-net-web-application-from-command-prompt/">Ejecutar aplicación web ASP.NET desde la linea de comandos.</a>
 - Para ejecutar la aplicacion desde Visual Studio, abra el proyecto como una solucion desde el IDE.
 - Abra la consola de administracion de paquetes de Visual Studio y ejecute el siguiente comando: *Update-Package*
-- Pulse la tecla *F5* para ejeutar la aplicación.
+- Pulse la tecla *F5* para ejecutar la aplicación.
